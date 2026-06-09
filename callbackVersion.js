@@ -4,7 +4,7 @@ function mowYard(name, callback) {
     callback();
   }, 2000);
 }
-
+ 
 function weedEat(name, callback) {
   setTimeout(() => {
     if (Math.random() > 0.3) {
@@ -63,4 +63,4 @@ function doSummerChores(name) {
   });
 }
 
-doSummerChores("Autumn");
+doSummerChores("autumn");
