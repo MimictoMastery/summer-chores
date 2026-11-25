@@ -1,10 +1,10 @@
 Summer Chores: Callbacks, Promises, and Async/Await Exercise
 
-Live demo: 
+Live demo: https://mimictomastery.github.io/summer-chores/
 
 Overview
 
-This project is a series of summer chores using callbacks, Promises, and async/await. There are three separate files: callbackVersion.js, promiseVersion.js, and asyncAwaitVersion.js, each containing syntax that highlights the use of each approach. Each chore runs in order, and each one may succeed or randomly fail (fall asleep).
+This project is a series of summer chores using callbacks, Promises, and async/await. There are three separate files: callbackVersion.js, promiseVersion.js, and asyncAwaitVersion.js, each containing syntax that highlights the use of each approach. Each chore runs in order, and each one may succeed or randomly fail (fall asleep). It was created as a practice project through Code:U
 
 It demonstrates how callback functions, Promises, async/await, and setTimeout work to create a series of events.
 
@@ -84,7 +84,7 @@ Run each one several times. The output changes every time.
 
 
 
-© 2026 Mimic to Mastery.
+
 
 
 
