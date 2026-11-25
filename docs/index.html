@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summer Chores | Mimic to Mastery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient-glow background-cyan" aria-hidden="true"></div>
+<div class="ambient-glow background-purple" aria-hidden="true"></div>
+
+<main class="site-shell">
+  <header class="intro-content">
+    <h1 class="intro-title gradient-text">Summer Chores, three ways</h1>
+    <div class="accent-stripe"></div>
+    <p class="intro-summary">Five chores run in order, and any chore after the first can fail if the worker falls asleep. Pick a version, press Run, and watch the same logic written with callbacks, Promises, and async/await.</p>
+  </header>
+
+  <div class="version-tabs" role="group" aria-label="Choose a version">
+    <button type="button" class="version-tab" data-v="callbacks" aria-pressed="true">Callbacks</button>
+    <button type="button" class="version-tab" data-v="promises" aria-pressed="false">Promises</button>
+    <button type="button" class="version-tab" data-v="async" aria-pressed="false">Async/await</button>
+  </div>
+  <p class="version-description" id="blurb"></p>
+
+  <div class="run-controls">
+    <label for="name">Worker</label>
+    <input id="name" value="Autumn" maxlength="20">
+    <button class="action-button action-button--primary" id="run" type="button">Run in terminal</button>
+  </div>
+
+  <div class="demo-grid">
+    <section class="demo-card glass-panel">
+      <h2 class="content-section-title">Chore board</h2>
+      <ul class="chore-list" id="board"></ul>
+      <div class="progress-track" aria-hidden="true"><i class="progress-fill" id="meter"></i></div>
+    </section>
+
+    <section class="developer-terminal">
+      <div class="terminal-window-bar"><span>MINGW64:/c/summer-chores</span><span>bash</span></div>
+      <div class="terminal-window-content" id="terminal-output" aria-live="polite"></div>
+    </section>
+  </div>
+
+  <section class="demo-code">
+    <h2 class="content-section-title">The code behind this version</h2>
+    <pre class="code-window" id="code"></pre>
+    <p class="demo-note">Each chore succeeds with a set chance (mowing always does), so the output changes every run. That is Math.random() at work.</p>
+  </section>
+
+  <footer class="site-footer">
+    <p class="brand-mantra">If you have ever simultaneously felt like you are too much and not enough, stay a while. You belong here.</p>
+    <p class="footer-copyright">&copy; 2026 Mimic to Mastery. All rights reserved.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
